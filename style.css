@@ -1,0 +1,509 @@
+/*logo size adjusting */
+
+#logoimage
+{
+    width:60px;
+}
+
+
+.navbar-custom {
+    background-color:black; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: skyblue; 
+    font-size: 18px;
+    font-family: 'Anton', sans-serif; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: transparent; 
+    border: 1px solid black; 
+}
+
+
+.navbar-brand {
+    font-family: 'Honk', system-ui;   
+    font-size:35px;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display:block ;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a:active {
+    background-color: black; 
+    color: skyblue; 
+}
+
+
+
+/* button modification */
+#register-btn,
+#login-btn,
+#booknow-btn {
+    padding: 10px 15px;
+    background-color: skyblue;
+    color: black;
+}
+
+
+#register-btn:hover,
+#login-btn:hover,
+#booknow-btn:hover{
+    background-color: orange;
+}
+
+#hero button{
+    width: 130px;
+    font-size: 20px;
+}
+/* button modification ends*/
+
+
+.jumbotron{
+    background-color: black;
+    border-radius: 0;
+    margin: 0%;
+    
+   
+}
+#hero h2 {
+
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+ 
+}
+
+#hero h1 {
+    font-family: 'Honk', system-ui;
+   
+}
+
+/*image*/
+
+#hero {
+    background-image: url(egypt.jpg);
+    background-size: cover;
+    color: black;
+    padding: 100px;
+    margin-top: 0px;
+    width: 100%;
+    height: 94vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+/*image ends*/
+
+#changetext:after {
+    content: "";  
+    font-size: 50px;
+    animation-name: changetextpr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changetextpr {
+    0% {
+        content: "Taj Mahal";
+    }
+    30% {
+        content: "Antarctica";
+    }
+    50% {
+        content: "Macchu Picchu";
+    }
+    75% {
+        content: "Giza Pyramids";
+    }
+    100% {
+        content: "Panama Canal";
+    }
+}
+
+
+@media (max-width: 991px) {
+
+}
+@media (max-width: 575px) {
+
+    #logoimage {
+        width: 30px; /* Adjust logo size for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 30px; /* Adjust navbar brand font size */
+    }
+
+    #hero h1 {
+        font-size: 30px; /* Adjust hero heading font size */
+    }
+
+    #hero h2 {
+        font-size: 20px; /* Adjust hero subheading font size */
+    }
+
+    #hero button {
+        width: 120px; /* Adjust button width for smaller screens */
+        font-size: 18px; /* Adjust button font size */
+    }
+}
+
+
+/* second part */
+
+body{
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.col-md-6 {
+    width: 48%;
+}
+
+.custom-container {
+    width: 75%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 9%; /* Adjust the right margin to minimize the right side */
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#brandimage {
+    width: 750px;
+    margin-left: -250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: -90px;
+    
+    
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Honk', system-ui;
+    font-size: 23px;
+}
+
+
+
+#btn-booknow {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+    color: black
+   
+}
+
+
+#brandimage{
+    width: 570px;
+    margin-top: 50px;
+   
+}   
+
+.bookingform{
+    background-color: black;
+}
+
+/* Gallery section styles */
+.container {
+    max-width: 1250px;
+    background-color: black;
+    
+}
+
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+ 
+}
+
+.card-body {
+    text-align: center;
+}
+
+#btn-book{
+    background-color: skyblue;
+}
+
+#btn-book:hover{
+    background-color: orange;
+}
+
+#p-text{
+    font-family: 'Anton', sans-serif;  
+}
+
+#h5-card{
+    font-family: 'Anton', sans-serif;  
+    font-size: 25px;
+    
+}
+
+
+.card-text .fas {
+    color: gold; 
+  
+}
+
+.card-text .far {
+    color: gold;
+     
+}
+
+
+
+
+
+/* Media query for tablets (including iPads) */
+@media (max-width: 991px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #brandimage {
+        width: 60%; /* Adjust the image width for better presentation on tablets */
+        max-width: 400px; /* Adjust the maximum width as needed */
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* Adjust styles for screens with a maximum width of 767px (e.g., mobile devices) */
+
+    .col-md-6 {
+        width: 100%; /* Make the form section full width for smaller screens */
+        margin-bottom: 20px; /* Add some spacing between form sections on mobile */
+    }
+
+    form {
+        max-width: 300px; /* Adjust the form width for better mobile presentation */
+        margin: 0 auto; /* Center the form on smaller screens */
+    }
+
+    label {
+        font-size: 16px; /* Adjust label font size for better readability on mobile */
+    }
+
+    #brandimage {
+        width: 100%; /* Make the brand image full width on smaller screens */
+        display: block; /* Ensure the image is a block-level element */
+        margin: 0 auto; /* Center the image within its container */
+    }
+
+}
+
+
+
+
+/* Custom color for the heading */
+.heading-color {
+    font-family: 'Honk', system-ui;
+    font-size: 50px;
+    
+
+}
+
+
+/* Style for carousel images */
+.carousel-inner img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Scale the image on hover */
+.carousel-inner img:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+
+
+/* Media query for tablets (including iPads) */
+@media (max-width: 991px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #brandimage {
+        width: 60%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #brandimage {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* About Us Section Styles */
+
+.custom-container {
+    max-width: 1000px;
+   
+}
+
+/* Left Section (Image) */
+.col-md-6 img {
+    width: 270px;
+    margin-left: -30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.col-md-6 img:hover {
+    transform: scale(1.1);
+}
+
+/* Right Section (Company Information) */
+.col-md-6 {
+    display: flex;
+    margin-right: -20px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.col-md-6 h3 {
+    font-family: 'Honk', system-ui;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.col-md-6 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+    .col-md-6 {
+        padding: 20px 0;
+    }
+}
+
+
+
+/* Footer Styles */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    font-family: 'Honk', system-ui;
+    font-size: 24px;
+}
+
+.social-icons {
+    font-size: 20px;
+}
+
+.social-icons i {
+    margin-right: 15px;
+    color: white;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
